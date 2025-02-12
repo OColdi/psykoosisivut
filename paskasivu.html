@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kotisivut</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            color: white;
+            background-image: url('https://cdn.discordapp.com/attachments/618521411648094231/916826830659547146/7irjc.png?ex=67add146&is=67ac7fc6&hm=c9e63254ea71aba490fbbaf4010a8f933f6f93e92e7575b8e238d908dfb71918&');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        /* Yläpalkki */
+        .top-bar {
+            width: 100%;
+            height: 250px;
+            background-color: rgba(0, 0, 0, 0.7); /* Puoliläpinäkyvä musta tausta */
+            display: flex;
+            align-items: center;
+            padding-left: 20px;
+            position: fixed;
+            top: 0;
+            left: 0;
+            z-index: 1000;
+        }
+        .top-bar img {
+            width: 200px;
+            height: 200px;
+            border-radius: 10px;
+            margin-right: 20px;
+        }
+        .top-bar nav {
+            display: flex;
+            gap: 20px;
+        }
+        .top-bar nav a {
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+            transition: color 0.3s ease;
+        }
+        .top-bar nav a:hover {
+            color: #1abc9c; /* Vaihda väriä hover-tilassa */
+        }
+        /* Pääsisältö */
+        .container {
+            background-color: rgba(247, 0, 255, 0.3); /* Puoliläpinäkyvä tausta */
+            padding: 20px;
+            border-radius: 10px;
+            width: 80%;
+            max-width: 1000px;
+            text-align: center;
+            margin-top: 270px; /* Varmistaa, että sisältö ei mene yläpalkin alle */
+        }
+        .text-box {
+            margin: 20px 0;
+            padding: 10px;
+            background-color: rgba(255, 255, 255, 0.2); /* Puoliläpinäkyvä valkoinen tausta */
+            border-radius: 5px;
+            border: 1px solid rgba(255, 255, 255, 0.3);
+        }
+        .text-box h2 {
+            margin-top: 0;
+        }
+        .text-box p {
+            margin: 0;
+        }
+        .image-link {
+            display: inline-block;
+            margin-top: 20px;
+        }
+        .image-link img {
+            width: 200px; /* Voit säätää kuvan kokoa tarpeen mukaan */
+            height: 200px;
+            border-radius: 10px;
+            border: 2px solid rgba(255, 255, 255, 0.5);
+            transition: transform 0.3s ease, border-color 0.3s ease;
+        }
+        .image-link img:hover {
+            transform: scale(1.05);
+            border-color: rgba(255, 255, 255, 0.8);
+        }
+    </style>
+</head>
+<body>
+    <!-- Yläpalkki -->
+    <div class="top-bar">
+        <img src="https://cdn.discordapp.com/attachments/1070021774466621570/1190804839425384678/OIG.rF_2DnCs_.jpg?ex=67addd2d&is=67ac8bad&hm=b9092a6a43adaa845ae0168bed301361c24dabb0f5173c8431476995d58c9368&" alt="Logo">
+        <nav>
+            <a href="#">Linkki 1</a>
+            <a href="#">Linkki 2</a>
+            <a href="#">Linkki 3</a>
+            <a href="#">Linkki 4</a>
+        </nav>
+    </div>
+
+    <!-- Pääsisältö -->
+    <div class="container">
+        <!-- Ensimmäinen tekstialue -->
+        <div class="text-box">
+            <h2>Onko jarno kännissä</h2>
+            <p>Jarno ei valitettavasti ole kännissä.</p>
+        </div>
+
+        <!-- Toinen tekstialue -->
+        <div class="text-box">
+            <h2>Hei! olen tohtori gerhard</h2>
+            <p>Etsimme testaajia uudelle mieskuntoa parantavalle tuotteellemme. Testaajat ovat innoissaan mahtavista tuloksista: jopa kahdeksan senttiä pidempi penis kahdessa viikossa. Jos haluat kokeilla tuotetta ilmaiseksi, klikkaa alla olevaa linkkiä ja tilaa itsellesi ilmainen pullo tänään</p>
+        </div>
+
+        <!-- Klikattava kuva -->
+        <div class="image-link">
+            <a href="https://www.alko.fi/" target="_blank">
+                <img src="https://cdn.discordapp.com/attachments/1070021774466621570/1174297316979642378/IMG_20231115_122944.jpg?ex=67adcb99&is=67ac7a19&hm=01c942eecd20f605d8beaca49ee73bf009886f0d876f9f9ce63cede6294b44f9&" alt="Kuva">
+            </a>
+        </div>
+    </div>
+</body>
+</html>
